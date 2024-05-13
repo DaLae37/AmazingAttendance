@@ -13,6 +13,21 @@
         android:theme="@style/Theme.AmazingAttendance"
         tools:targetApi="31">
         <activity
+            android:name=".CheckingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Checking"
+            android:exported="false" />
+        <activity
+            android:name=".AlarmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ApplicationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Application"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
