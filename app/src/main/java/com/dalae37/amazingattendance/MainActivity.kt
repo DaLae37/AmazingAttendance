@@ -20,13 +20,18 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        findViewById<Button>(R.id.application_setting).setOnClickListener(View.OnClickListener {
-            val intent : Intent = Intent(this, ApplicationActivity::class.java)
+        findViewById<Button>(R.id.application_checking).setOnClickListener(View.OnClickListener {
+            val intent : Intent = Intent(this, CheckingActivity::class.java)
             startActivity(intent)
         })
 
+        //findViewById<Button>(R.id.application_setting).setOnClickListener(View.OnClickListener {
+        //    val intent : Intent = Intent(this, ApplicationActivity::class.java)
+        //    startActivity(intent)
+        //})
+
         findViewById<Button>(R.id.alarm_setting).setOnClickListener(View.OnClickListener {
-            val intent : Intent = Intent(this, ApplicationActivity::class.java)
+            val intent : Intent = Intent(this, AlarmActivity::class.java)
             startActivity(intent)
         })
     }

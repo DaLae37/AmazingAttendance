@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
+
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -15,17 +16,17 @@
         android:layout_marginTop="30dp"
 
         android:fontFamily="@font/nanumbarungothic"
+        android:text="Amazing Attendance"
         android:textAlignment="center"
-        android:textSize="30dp"
         android:textColor="@color/black"
-        android:text="Amazing Attendance"/>
+        android:textSize="30sp" />
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
+
         <Button
             android:id="@+id/application_checking"
             android:layout_width="150dp"
@@ -36,7 +37,7 @@
             android:backgroundTint="@color/black"
 
             android:fontFamily="@font/nanumbarungothic"
-            android:text="앱 출석 확인"/>
+            android:text="앱 출석 확인" />
 
         <Button
             android:id="@+id/application_setting"
@@ -48,7 +49,7 @@
             android:backgroundTint="@color/black"
 
             android:fontFamily="@font/nanumbarungothic"
-            android:text="앱 목록 설정"/>
+            android:text="앱 목록 설정" />
 
         <Button
             android:id="@+id/alarm_setting"
@@ -65,19 +66,19 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
 
         android:layout_weight="1"
-        android:gravity="right"
-        >
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
+        android:gravity="end">
 
-        android:fontFamily="@font/nanumbarungothic"
-        android:textSize="15dp"
-        android:textColor="@color/black"
-        android:text="폰트 : 나눔바른고딕"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+
+            android:fontFamily="@font/nanumbarungothic"
+            android:text="폰트 : 나눔바른고딕"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
     </LinearLayout>
 </LinearLayout>

@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,20 +16,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AmazingAttendance"
         tools:targetApi="31">
+        <receiver android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
         <activity
             android:name=".CheckingActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Checking"
             android:exported="false" />
         <activity
             android:name=".AlarmActivity"
             android:exported="false" />
         <activity
             android:name=".ApplicationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Application"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
